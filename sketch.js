@@ -20,10 +20,11 @@ function draw() {
   if(wall.x-car.x < (car.width+wall.width)/2)
   {
     car.velocityX=0;
-
+   
     car.x = wall.x-(wall.width+car.width)/2
     
     var deformation=0.5 *weight * speed * speed/22509;
+     text(" deformation " + deformation, 400,50);
     if (deformation>180)
     {
       (car).shapeColor=color(255,0,0)
